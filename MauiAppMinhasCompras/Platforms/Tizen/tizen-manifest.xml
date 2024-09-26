@@ -1,15 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Manifesto do aplicativo Tizen -->
 <manifest package="maui-application-id-placeholder" version="0.0.0" api-version="8" xmlns="http://tizen.org/ns/packages">
+  <!-- Perfil comum -->
   <profile name="common" />
+  <!-- Definição da aplicação UI -->
   <ui-application appid="maui-application-id-placeholder" exec="MauiAppMinhasCompras.dll" multiple="false" nodisplay="false" taskmanage="true" type="dotnet" launch_mode="single">
+    <!-- Rótulo do aplicativo -->
     <label>maui-application-title-placeholder</label>
+    <!-- Ícone do aplicativo -->
     <icon>maui-appicon-placeholder</icon>
+    <!-- Metadados preferenciais para AOT (Ahead-of-Time) do .NET -->
     <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true" />
   </ui-application>
+  <!-- Lista de atalhos -->
   <shortcut-list />
+  <!-- Privilégios necessários -->
   <privileges>
+    <!-- Privilégio de acesso à internet -->
     <privilege>http://tizen.org/privilege/internet</privilege>
   </privileges> 
+  <!-- Dependências do aplicativo -->
   <dependencies />
+  <!-- Privilégios definidos pelo aplicativo fornecidos -->
   <provides-appdefined-privileges />
 </manifest>

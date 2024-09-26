@@ -1,6 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaração do tipo de documento XML e codificação -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true"></application>
+		<!-- Permite que os dados do aplicativo sejam salvos e restaurados em backups -->
+		<!-- Define o ícone do aplicativo -->
+		<!-- Define o ícone arredondado do aplicativo -->
+		<!-- Indica que o aplicativo suporta layout da direita para a esquerda (RTL) -->
+	<application 
+		android:allowBackup="true" 
+		android:icon="@mipmap/appicon" 
+		android:roundIcon="@mipmap/appicon_round" 
+		android:supportsRtl="true">
+	</application>
+
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- Permissão para acessar o estado da rede (necessário para verificar a conectividade) -->
+
 	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Permissão para acessar a internet -->
 </manifest>

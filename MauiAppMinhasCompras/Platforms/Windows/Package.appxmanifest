@@ -6,26 +6,34 @@
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   IgnorableNamespaces="uap rescap">
 
+  <!-- Identidade do pacote com nome, editor e versão -->
   <Identity Name="maui-package-name-placeholder" Publisher="CN=User Name" Version="0.0.0.0" />
 
+  <!-- Identidade do telefone com ID do produto e ID do editor -->
   <mp:PhoneIdentity PhoneProductId="82BFCBB8-CD53-48EA-A64B-572F079FD156" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
+    <!-- Nome de exibição do aplicativo -->
     <DisplayName>$placeholder$</DisplayName>
+    <!-- Nome de exibição do editor -->
     <PublisherDisplayName>User Name</PublisherDisplayName>
+    <!-- Logo do aplicativo -->
     <Logo>$placeholder$.png</Logo>
   </Properties>
 
   <Dependencies>
+    <!-- Dependências do pacote para diferentes famílias de dispositivos -->
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
     <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
   </Dependencies>
 
   <Resources>
+    <!-- Recursos do pacote, como idiomas -->
     <Resource Language="x-generate" />
   </Resources>
 
   <Applications>
+    <!-- Definição do aplicativo -->
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="$placeholder$"
@@ -33,6 +41,7 @@
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"
         BackgroundColor="transparent">
+        <!-- Definição dos logos e tela de splash -->
         <uap:DefaultTile Square71x71Logo="$placeholder$.png" Wide310x150Logo="$placeholder$.png" Square310x310Logo="$placeholder$.png" />
         <uap:SplashScreen Image="$placeholder$.png" />
       </uap:VisualElements>
@@ -40,6 +49,7 @@
   </Applications>
 
   <Capabilities>
+    <!-- Capacidades do aplicativo, como execução em modo de confiança total -->
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
 
